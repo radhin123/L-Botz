@@ -109,7 +109,7 @@ const _reminder = JSON.parse(fs.readFileSync("./database/reminder.json"));
 /*SETTINGGGGGGGG*/
 banChats = false;
 offline = false;
-targetpc = "6281319944917";
+targetpc = "6285707101183";
 gopay = "0882-1329-2687";
 limitawal = "20"
 ovo = "0882-1329-2687";
@@ -120,14 +120,14 @@ linkimg = "https://telegra.ph/file/fb08daf350ee2092c200f.jpg";
 /*ITU YG DI ATAS LINK IMAGENYA DONASI DANA YA KAWAN*/
 grupct = "https://chat.whatsapp.com/HECLovHbCI6LVVH4Q8FN2C";
 owner = "6281319944917";
-nama_owner = "Arasyaaa";
+nama_owner = "Damar";
 instagram = "sofunsyabi.id";
 yt = "https://youtube.com/channel/UCZzt-Qw0zTYc8UP-LL2G5fA";
-fake = "*JOJO - BOT*";
+fake = "*L - BOT*";
 thumb = fs.readFileSync("./stik/thumb.jpeg");
 numbernye = "0";
 waktu = "-";
-alasan = "Gada🗿";
+alasan = "Gada";
 autojoin = false;
 prefixStatus = false;
 hit_today = [];
