@@ -21,7 +21,7 @@ nocache("./index.js", (module) => console.log(`${module} is now updated!`));
 const starts = async (client = new WAConnection()) => {
   client.logger.level = "warn";
   client.version = [2, 2123, 8];
-  client.browserDescription = ["Arasya Ganteng", "Chrome", "3.0"];
+  client.browserDescription = ["Leviathan", "firefox", "3.0"];
   console.log(banner.string);
   client.on("qr", () => {
     console.log(
@@ -37,16 +37,16 @@ const starts = async (client = new WAConnection()) => {
     start("2", "Menyambung.....");
   });
   client.on("open", () => {
-    success("2", "Tersambung√, Hai owner Jojooo👋");
+    success("2", "Tersambung√, Hai owner 👋");
   });
   await client.connect({ timeoutMs: 30 * 1000 });
   fs.writeFileSync(
     "./session.json",
     JSON.stringify(client.base64EncodedAuthInfo(), null, "\t")
   );
-        ownerNumber = ["6281319944917@s.whatsapp.net",`6281319944917@s.whatsapp.net`]
-        dtod = "6281319944917@s.whatsapp.net"
-       otod = `6281319944917@s.whatsapp.net`
+        ownerNumber = ["6282311619167@s.whatsapp.net",`6285707101183@s.whatsapp.net`]
+        dtod = "6282311619167@s.whatsapp.net"
+       otod = `6282311619167@s.whatsapp.net`
 
   client.on("group-update", async (anu) => {
     metdata = await client.groupMetadata(anu.jid);
@@ -88,7 +88,7 @@ const starts = async (client = new WAConnection()) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Haii kak *@${num.split('@')[0]}* ! Selamat Datang Yah Di Grup ${mdata.subject}\n\nJangan Lupa Intro and following rules Grup❤️`
+				teks = `Haii kak *@${num.split('@')[0]}* ! Selamat Datang Yah Di Grup ${mdata.subject}\n\nJangan Lupa Intro and following rules Grup`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				} else if (anu.action == 'remove') {
@@ -103,7 +103,7 @@ const starts = async (client = new WAConnection()) => {
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
 			else if (anu.action == 'promote') {
-fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;pemuda;;;\nFN:pemuda\nitem1.TEL;waid=6281319944917:6281319944917\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+fkontakk = { key: { fromMe: false, participant: `6282311619167@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;pemuda;;;\nFN:pemuda\nitem1.TEL;waid=6281319944917:6281319944917\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
 
 num = anu.participants[0]
 teks = `*P R O M O T E - D E T E C T E D*\nUsername: @${num.split('@')[0]}\nTime : ${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}\nGroup: ${mdata.subject}\n\nSelamat Yah atas Kenaikan Pangkatnya 🔥`
@@ -111,7 +111,7 @@ client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJi
 console.log(color('|TRM|'), color(`Promote Member ${num.split('@')[0]} In ${mdata.subject}`,  'cyan'))
 } 
 else if (anu.action == 'demote') {
-fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;pemuda;;;\nFN:pemuda\nitem1.TEL;waid=6281319944917:6281319944917\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+fkontakk = { key: { fromMe: false, participant: `6282311619167@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;pemuda;;;\nFN:pemuda\nitem1.TEL;waid=6281319944917:6281319944917\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
 num = anu.participants[0]
 teks = `*D E M O T E - D E T E C T E D*\nUsername: @${num.split('@')[0]}\nTime : ${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}\nGroup: ${mdata.subject}\n\nMamposs Nggak jadi Admin lagi, mangkanya yg Becuss..!!`
 client.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}, quoted: fkontakk})
